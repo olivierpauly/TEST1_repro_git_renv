@@ -101,6 +101,24 @@
 # =====================
 
 
+# 1. Creer un projet dans GitHub
+# Pour creer un projet, on se rend simplement sur son GitHub, et on clique sur 'New'
+#      - Nom du projet : TEST1_repro_git_renv
+#      - Statut du projet : Public (prive etait payant, gratuit maintenant?)
+#      - On valide (voir plus tard les options readme/gitignore/licence)
+
+# 2. Faire le lien entre le projet local et le projet GitHub
+# Une fois le projet cree dans GitHub, une commande est generee pour permettre de faire le lien entre les projets local/GitHub :
+#      > git remote add origin https://github.com/olivierpauly/TEST1_repro_git_renv.git   ## associe le projet local au projet GitHub
+#      > git remote -v            ## indique le projet GitHub associe
+
+# 3. Interagir entre le projet local et le projet GitHub
+#      > git push origin master   ## "pousse" la branche 'master' dans le projet GitHub associe (mise en ligne)
+#      > git pull origin master   ## "tire" la branche 'master' depuis le projet GitHub associe (recuperation)
+
+
+
+
 
 
 
