@@ -85,9 +85,10 @@
 #      > git merge concept-branche -m "merge branch 'concept-branche'"  ## creait un commit dans master en prenant en compte les elements du dernier commit de la branche "concept-branche" (+ supprime "concept-branche)
 
 # REMARQUE 1 : Si des commits ont ete crees dans la nouvelle branche sans qu'aucun commit ne soit cree dans master en parallele, on dit que
-# la branche ne diverge pas de master, il s'agit simplement d'un prolongement. Appliquer "merge" ne creara pas un nouveau commit, mais rassemblera les
-# branches en une seule. Il faudra faire un commit a la main (add/commit), et il est ensuite possible de supprimer la branche :
-#     > git branch -d concept-branche
+# la branche ne diverge pas de master, il s'agit simplement d'un prolongement. Appliquer "merge" ne creara pas un nouveau commit (GIT renseignera
+# la mention "Fast Forward"), mais rassemblera les branches en une seule portant les deux noms (a confirmer).
+# Il faudra faire un commit a la main (add/commit), et il sera ensuite possible de supprimer la branche (definitif?) :
+#     > git branch -d concept-branche   ## supprime la branche "concept-branche"
 
 # REMARQUE 2 : En cas de conflit entre  deux commits de deux branches diff a merger (modif faites sur la meme ligne dans les deux commits)
 # GIT previent l'utilisateur qu'un conflit existe, ce conflit apparaissant dans le fichier. C'est a l'utilisateur de faire le bon choix pour
