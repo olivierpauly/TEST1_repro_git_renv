@@ -2,7 +2,19 @@
 ### SCRIPT 1 : PROJET RSTUDIO TEST RENV + GIT ###
 #################################################
 
-# Tuto permettant de realiser ce document sur la partie 'git' : https://www.youtube.com/watch?v=V6Zo68uQPqE
+
+# ==========================================
+# Liste des sources pour realiser ce fichier
+# ==========================================
+
+# Tuto video sur la partie 'git' : https://www.youtube.com/watch?v=V6Zo68uQPqE
+# Tuto video sur la partie 'renv' : https://www.youtube.com/watch?v=yjlEbIDevOs
+
+
+
+# ==============================================
+# Preparation des fichiers/repertoires et de GIT
+# ==============================================
 
 # 0. Petites astuces git
 #     - BOUTON DU MILIEU (MOLETTE) : coller dans la fenetre de commande git
@@ -35,6 +47,12 @@
 #     > git init     ## creait le dossier cache ".git" dans le repertoire courant
 #     > git status   ## permet de verifier l'etat des commits, entre autres les fichiers traques et non traques
 
+
+
+# ====================================================
+# Premiers elements de versionnage (basique, en local)
+# ====================================================
+
 # 5. Ajouter le fichier '1_test_repro.R' a la liste des fichiers traques
 #     > git add 1_test_repro.R   ## ajoute le fichier 1_test_repro.R a la liste des fichiers traques
 #     > git add 'TAB'            ## 'TAB' ne fonctionne pas car d'autres fichiers sont presents
@@ -65,11 +83,15 @@
 #      > git checkout master                                            ## retour dans "master" (le fichier redevient celui du dernier commit de "master")
 #      > git diff master..concept-branche                               ## permet de voir les differences entre les deux branches (utile si des modifs/commits ont ete faites sur les deux)
 #      > git merge concept-branche -m "merge branch 'concept-branche'"  ## creait un commit dans master en prenant en compte les elements du dernier commit de la branche "concept-branche" (+ supprime "concept-branche)
+# REMARQUE : En cas de conflit entre  deux commits de deux branches diff a merger (modif faites sur la meme ligne dans les deux commits)
+# GIT previent l'utilisateur qu'un conflit existe, ce conflit apparaissant dans le fichier. C'est a l'utilisateur de faire le bon choix pour
+# resoudre le conflit, puis de faire un add/commit pour sauvegarder la gestion du conflit. Voir a 25min20 de la video GIT pour plus d'info.
 
 
 
-
-
+# =====================
+# Utilisation de GitHub
+# =====================
 
 
 
