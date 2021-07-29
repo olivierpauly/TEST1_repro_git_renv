@@ -2,6 +2,8 @@
 ### SCRIPT 1 : PROJET RSTUDIO TEST RENV + GIT ###
 #################################################
 
+# Tuto permettant de realiser ce document sur la partie 'git' : https://www.youtube.com/watch?v=V6Zo68uQPqE
+
 # 0. Petites astuces git
 #     - BOUTON DU MILIEU (MOLETTE) : coller dans la fenetre de commande git
 #     - TABULATION : permet de finir une commande si un seul choix existe (voir "cd new" plus bas pour voir un exemple)
