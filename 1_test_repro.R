@@ -83,12 +83,12 @@
 #      > git checkout master                                            ## retour dans "master" (le fichier redevient celui du dernier commit de "master")
 #      > git diff master..concept-branche                               ## permet de voir les differences entre les deux branches (utile si des modifs/commits ont ete faites sur les deux)
 #      > git merge concept-branche -m "merge branch 'concept-branche'"  ## creait un commit dans master en prenant en compte les elements du dernier commit de la branche "concept-branche" (+ supprime "concept-branche)
+#      > git branch -d concept-branche                                  ## supprime la branche (son label) mais conserve les commits qui s'y trouvaient
 
 # REMARQUE 1 : Si des commits ont ete crees dans la nouvelle branche sans qu'aucun commit ne soit cree dans master en parallele, on dit que
 # la branche ne diverge pas de master, il s'agit simplement d'un prolongement. Appliquer "merge" ne creara pas un nouveau commit (GIT renseignera
 # la mention "Fast Forward"), mais rassemblera les branches en une seule portant les deux noms (a confirmer).
-# Il faudra faire un commit a la main (add/commit), et il sera ensuite possible de supprimer la branche (definitif?) :
-#     > git branch -d concept-branche   ## supprime la branche "concept-branche"
+# Il faudra faire un commit a la main (add/commit), et il sera ensuite possible de supprimer la branche.
 
 # REMARQUE 2 : En cas de conflit entre  deux commits de deux branches diff a merger (modif faites sur la meme ligne dans les deux commits)
 # GIT previent l'utilisateur qu'un conflit existe, ce conflit apparaissant dans le fichier. C'est a l'utilisateur de faire le bon choix pour
